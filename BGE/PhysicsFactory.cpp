@@ -135,7 +135,7 @@ shared_ptr<PhysicsController> PhysicsFactory::CreateBox(float width, float heigh
 	}
 	// Create the rigid body
 	btDefaultMotionState * boxMotionState = new btDefaultMotionState(btTransform(GLToBtQuat(quat)
-		,GLToBtVector(pos)));			
+		,GLToBtVector(pos)));	//assigns position and orientation		
 	btRigidBody::btRigidBodyConstructionInfo fallRigidBodyCI(mass,  boxMotionState, boxShape, boxInertia);
 	btRigidBody * body = new btRigidBody(fallRigidBodyCI);
 	body->setFriction(567);

@@ -36,6 +36,12 @@ bool PhysicsGame1::Initialise()
 	shared_ptr<PhysicsController> box1 = physicsFactory->CreateBox(1,1,4, glm::vec3(5, 5, 0), glm::quat()); 
 	shared_ptr<PhysicsController> box2 = physicsFactory->CreateBox(1,1,4, glm::vec3(5, 5, 5), glm::quat()); 
 
+
+	//create a wall
+	physicsFactory->CreateWall(glm::vec3(0, 0, 0), 10, 5);
+	
+
+	/*
 	// A hinge
 	btHingeConstraint * hinge = new btHingeConstraint(*box1->rigidBody, *box2->rigidBody, btVector3(0,0,2.5f),btVector3(0,0,-2.5f), btVector3(0,1,0), btVector3(0,1,0), true);
 	dynamicsWorld->addConstraint(hinge);
@@ -67,6 +73,7 @@ bool PhysicsGame1::Initialise()
 	
 	btSliderConstraint * slider = new btSliderConstraint(*box1->rigidBody, *box2->rigidBody, box1Transform, box2Transform, true);
 	dynamicsWorld->addConstraint(slider);
+	*/
 
 	if (!Game::Initialise()) {
 		return false;
@@ -79,7 +86,7 @@ bool PhysicsGame1::Initialise()
 
 void BGE::PhysicsGame1::Update(float timeDelta)
 {
-	cyl->rigidBody->applyTorque(GLToBtVector(glm::vec3(0.0f,0.0f,1.0f)));
+	//cyl->rigidBody->applyTorque(GLToBtVector(glm::vec3(0.0f,0.0f,1.0f)));
 
 	Game::Update(timeDelta);
 }

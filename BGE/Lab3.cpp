@@ -46,6 +46,56 @@ void Lab3::Update(float timeDelta)
 	{
 		ship2->transform->position -= ship2->transform->look * speed * timeDelta;
 	}
+	if (keyState[SDL_SCANCODE_LEFT]){
+
+		ship2->transform->Yaw(speed / 3);
+	}
+	if (keyState[SDL_SCANCODE_RIGHT]){
+		ship2->transform->Yaw(-speed / 3);
+	}
+	if (keyState[SDL_SCANCODE_U]){
+		ship1->transform->position += ship1->transform->look * speed * timeDelta;
+	}
+	if (keyState[SDL_SCANCODE_J]){
+		ship1->transform->position -= ship1->transform->look * speed * timeDelta;
+	}
+	if (keyState[SDL_SCANCODE_H]){
+		ship1->transform->Yaw(speed / 3);
+	}
+	if (keyState[SDL_SCANCODE_K]){
+		ship1->transform->Yaw(-speed / 3);
+	}
+
+	/*if (glm::distance(ship1->transform->position, ship2->transform->position) < 5){
+		cout << "Touching me, touching yoooouuu" << endl;
+		PrintText("In Range");
+	}
+	else{
+		cout << "Not in range" << endl;
+		PrintText("Not In Range");
+	}*/
+
+	glm::vec3 c = ship2->transform->position - ship1->transform->position;
+	float inv = glm::dot(c, ship2->transform->look);
+
+	if (inv > 0){
+		PrintText("Behind");
+	}
+	else{
+		PrintText("In Front");
+	}
+
+	float clen = glm::length(c);
+	float llen = glm::length(ship2->transform->look);
+	float theta = glm::acos(inv / clen);
+
+	if (theta > glm::radians(45.0)){
+		PrintText("Not In view");
+	}
+	else{
+		PrintText("in View");
+	}
+
 	elapsed += timeDelta;
 
 

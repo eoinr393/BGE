@@ -212,6 +212,21 @@
     <ClCompile Include="Lab3.cpp">
       <Filter>Labs</Filter>
     </ClCompile>
+    <ClCompile Include="Lab4.cpp">
+      <Filter>Labs</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab6.cpp">
+      <Filter>Labs</Filter>
+    </ClCompile>
+    <ClCompile Include="GravityController.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab7.cpp">
+      <Filter>Labs</Filter>
+    </ClCompile>
+    <ClCompile Include="Assignmment1.cpp">
+      <Filter>Games</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h">
@@ -378,6 +393,21 @@
     </ClInclude>
     <ClInclude Include="Lab3.h">
       <Filter>Labs</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab4.h">
+      <Filter>Labs</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab6.h">
+      <Filter>Labs</Filter>
+    </ClInclude>
+    <ClInclude Include="GravityController.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab7.h">
+      <Filter>Labs</Filter>
+    </ClInclude>
+    <ClInclude Include="Assignment1.h">
+      <Filter>Games</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
