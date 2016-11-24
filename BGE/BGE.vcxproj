@@ -111,6 +111,7 @@
     <ClCompile Include="Lab4.cpp" />
     <ClCompile Include="Lab6.cpp" />
     <ClCompile Include="Lab7.cpp" />
+    <ClCompile Include="Lab8.cpp" />
     <ClCompile Include="LazerBeam.cpp" />
     <ClCompile Include="LeapHands.cpp" />
     <ClCompile Include="ObstacleAvoidanceScenario.cpp" />
@@ -126,6 +127,7 @@
     <ClCompile Include="SnowEffect.cpp" />
     <ClCompile Include="GravityController.cpp" />
     <ClCompile Include="State.cpp" />
+    <ClCompile Include="Steerable2DController.cpp" />
     <ClCompile Include="SteeringGame.cpp" />
     <ClCompile Include="Transform.cpp" />
     <ClCompile Include="Utils.cpp" />
@@ -175,6 +177,7 @@
     <ClInclude Include="Lab4.h" />
     <ClInclude Include="Lab6.h" />
     <ClInclude Include="Lab7.h" />
+    <ClInclude Include="Lab8.h" />
     <ClInclude Include="LazerBeam.h" />
     <ClInclude Include="LeapHands.h" />
     <ClInclude Include="ObstacleAvoidanceScenario.h" />
@@ -188,6 +191,7 @@
     <ClInclude Include="SkeletonMapper.h" />
     <ClInclude Include="SnowEffect.h" />
     <ClInclude Include="State.h" />
+    <ClInclude Include="Steerable2DController.h" />
     <ClInclude Include="SteeringGame.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="Utils.h" />

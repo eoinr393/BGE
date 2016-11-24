@@ -14,6 +14,7 @@
 #include <gtx/norm.hpp>
 #include "VectorDrawer.h"
 #include "Utils.h"
+#include "Steerable2DController.h"
 
 using namespace BGE;
 
@@ -34,11 +35,13 @@ bool PhysicsGame1::Initialise()
 	physicsFactory->CreateCameraPhysics();	
 
 	shared_ptr<PhysicsController> box1 = physicsFactory->CreateBox(1,1,4, glm::vec3(5, 5, 0), glm::quat()); 
-	shared_ptr<PhysicsController> box2 = physicsFactory->CreateBox(1,1,4, glm::vec3(5, 5, 5), glm::quat()); 
+	box1->Attach(make_shared<Steerable2DController>());
+	//shared_ptr<PhysicsController> box2 = physicsFactory->CreateBox(1,1,4, glm::vec3(5, 5, 5), glm::quat()); 
 
 
 	//create a wall
-	physicsFactory->CreateWall(glm::vec3(0, 0, 0), 10, 5);
+	//physicsFactory->CreateWall(glm::vec3(0, 0, 0), 10, 5);
+	//physicsFactory->CreateVehicle(glm::vec3(0, 0, 0));
 	
 
 	/*

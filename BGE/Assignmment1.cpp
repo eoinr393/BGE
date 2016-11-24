@@ -30,6 +30,8 @@ bool Assignment1::Initialise()
 	shared_ptr<PhysicsController> box2 = physicsFactory->CreateBox(1, 1, 4, glm::vec3(5, 5, 5), glm::quat());
 
 	physicsFactory->CreateWall(glm::vec3(0, 0, 0), 10, 5);
+
+	return true;
 }
 
 void BGE::Assignment1::Update( float timeDelta)

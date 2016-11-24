@@ -1,0 +1,117 @@
+﻿Build started 15/11/2016 13:53:46.
+     1>Project "C:\Users\eoinr\Documents\College\Game Engines\BGE\BGE\BGE\BGE.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Assignmment1.cpp AttackingState.cpp Buddha.cpp Capsule.cpp FlockingScenario.cpp FountainEffect.cpp IdleState.cpp KinectAudioStream.cpp Lab3.cpp Lab4.cpp Lab6.cpp Lab7.cpp LazerBeam.cpp LeapHands.cpp ObstacleAvoidanceScenario.cpp Particle.cpp ParticleEffect.cpp PathFollowingScenario.cpp Person2.cpp PhysicsDrawer.cpp Route.cpp Scenario.cpp SceneGraphGame.cpp SkeletonMapper.cpp SnowEffect.cpp GravityController.cpp State.cpp SteeringGame.cpp Transform.cpp Utils.cpp Exception.cpp Box.cpp Camera.cpp Content.cpp CubeTest.cpp Cylinder.cpp FPSController.cpp Game.cpp GameComponent.cpp Ground.cpp KinematicMotionState.cpp LineDrawer.cpp main.cpp Model.cpp ModelTest.cpp MotionState.cpp Params.cpp PhysicsCamera.cpp PhysicsFactory.cpp PhysicsGame1.cpp PhysicsController.cpp RiftController.cpp SoundSystem.cpp Steerable3DController.cpp Sphere.cpp SteeringControler.cpp TexturedCube.cpp TriangleTest.cpp VectorDrawer.cpp VRGame2.cpp XBoxController.cpp
+         Assignmment1.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         AttackingState.cpp
+         Buddha.cpp
+     1>Buddha.cpp(81): warning C4018: '<' : signed/unsigned mismatch
+         Capsule.cpp
+         FlockingScenario.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         FountainEffect.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         IdleState.cpp
+         KinectAudioStream.cpp
+         Lab3.cpp
+         Lab4.cpp
+     1>Lab4.cpp(80): warning C4018: '<' : signed/unsigned mismatch
+         Lab6.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         Lab7.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         LazerBeam.cpp
+         LeapHands.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\LeapHands.h(3): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         ObstacleAvoidanceScenario.cpp
+     1>ObstacleAvoidanceScenario.cpp(62): warning C4018: '<' : signed/unsigned mismatch
+         Particle.cpp
+         ParticleEffect.cpp
+         PathFollowingScenario.cpp
+         Person2.cpp
+     1>C:\Users\eoinr\Documents\College\Game Engines\BGE\BGE\Dependencies\Speech\v11.0\Include\sphelper.h(1235): warning C4996: 'GetVersionExW': was declared deprecated
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\um\sysinfoapi.h(442) : see declaration of 'GetVersionExW'
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\LeapHands.h(3): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         PhysicsDrawer.cpp
+         Compiling...
+         Route.cpp
+     1>Route.cpp(23): warning C4018: '<' : signed/unsigned mismatch
+         Scenario.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         SceneGraphGame.cpp
+     1>SceneGraphGame.cpp(174): warning C4018: '<' : signed/unsigned mismatch
+         SkeletonMapper.cpp
+         SnowEffect.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         GravityController.cpp
+         State.cpp
+         SteeringGame.cpp
+     1>SteeringGame.cpp(73): warning C4018: '<' : signed/unsigned mismatch
+         Transform.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         Utils.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         Exception.cpp
+         Box.cpp
+         Camera.cpp
+     1>Camera.cpp(29): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         Content.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         CubeTest.cpp
+         Cylinder.cpp
+         FPSController.cpp
+     1>FPSController.cpp(55): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>FPSController.cpp(56): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>FPSController.cpp(58): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>FPSController.cpp(59): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         Game.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         GameComponent.cpp
+         Ground.cpp
+         Compiling...
+         KinematicMotionState.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         LineDrawer.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         main.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Buddha.h(7): warning C4005: 'FOUNTAIN_RADIUS' : macro redefinition
+                 c:\users\eoinr\documents\college\game engines\bge\bge\bge\Lab4.h(7) : see previous definition of 'FOUNTAIN_RADIUS'
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         Model.cpp
+     1>Model.cpp(27): warning C4172: returning address of local variable or temporary
+         ModelTest.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\memory(932): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\memory(1003) : see reference to function template instantiation 'std::_Ref_count_obj<_Ty>::_Ref_count_obj<int,int,int>(int &&,int &&,int &&)' being compiled
+                 with
+                 [
+                     _Ty=BGE::Box
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\memory(1003) : see reference to function template instantiation 'std::_Ref_count_obj<_Ty>::_Ref_count_obj<int,int,int>(int &&,int &&,int &&)' being compiled
+                 with
+                 [
+                     _Ty=BGE::Box
+                 ]
+                 ModelTest.cpp(28) : see reference to function template instantiation 'std::shared_ptr<BGE::Box> std::make_shared<BGE::Box,int,int,int>(int &&,int &&,int &&)' being compiled
+         MotionState.cpp
+         Params.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         PhysicsCamera.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         PhysicsFactory.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         PhysicsGame1.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         PhysicsController.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         RiftController.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\Utils.h(17): fatal error C1083: Cannot open include file: 'Leap.h': No such file or directory
+         SoundSystem.cpp
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(341,5): warning MSB4220: Waiting for the currently executing task "CL" to cancel.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(341,5): warning MSB4220: Waiting for the currently executing task "CL" to cancel.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(341,5): warning MSB4220: Waiting for the currently executing task "CL" to cancel.
+     1>Done Building Project "C:\Users\eoinr\Documents\College\Game Engines\BGE\BGE\BGE\BGE.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:51:29.32

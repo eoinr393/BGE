@@ -16,6 +16,7 @@
 #include "FPSController.h"
 #include "XBoxController.h"
 #include "Steerable3DController.h"
+#include "Steerable2DController.h"
 #include "Utils.h"
 #include "SDL_syswm.h"
 #include "Params.h"
