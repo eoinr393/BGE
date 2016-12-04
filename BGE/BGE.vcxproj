@@ -105,6 +105,7 @@
     <ClCompile Include="Capsule.cpp" />
     <ClCompile Include="FlockingScenario.cpp" />
     <ClCompile Include="FountainEffect.cpp" />
+    <ClCompile Include="Gorilla.cpp" />
     <ClCompile Include="IdleState.cpp" />
     <ClCompile Include="KinectAudioStream.cpp" />
     <ClCompile Include="Lab3.cpp" />
@@ -170,6 +171,7 @@
     <ClInclude Include="Capsule.h" />
     <ClInclude Include="FlockingScenario.h" />
     <ClInclude Include="FountainEffect.h" />
+    <ClInclude Include="Gorilla.h" />
     <ClInclude Include="GravityController.h" />
     <ClInclude Include="IdleState.h" />
     <ClInclude Include="KinectAudioStream.h" />

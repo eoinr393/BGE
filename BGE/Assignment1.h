@@ -11,12 +11,14 @@
 #include "VectorDrawer.h"
 #include "Utils.h"
 #include <ctime>
+#include "Gorilla.h"
 
 namespace BGE{
 	
 	class Assignment1 : 
 		public Game{
 	private:
+		shared_ptr<Gorilla> gorilla;
 	public: 
 		Assignment1(void);
 		bool Initialise();
@@ -30,9 +32,6 @@ namespace BGE{
 
 		int frameCount = 0;
 		bool forBack = true;
-
-		std::clock_t start;
-		double duration;
 
 		glm::vec3 bodyCentre = glm::vec3(0, 20, 0);
 

@@ -233,6 +233,9 @@
     <ClCompile Include="Lab8.cpp">
       <Filter>Labs</Filter>
     </ClCompile>
+    <ClCompile Include="Gorilla.cpp">
+      <Filter>Prefabs</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h">
@@ -420,6 +423,9 @@
     </ClInclude>
     <ClInclude Include="Lab8.h">
       <Filter>Labs</Filter>
+    </ClInclude>
+    <ClInclude Include="Gorilla.h">
+      <Filter>Prefabs</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
