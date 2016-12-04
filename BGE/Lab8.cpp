@@ -3,6 +3,7 @@
 #include "VectorDrawer.h"
 #include "GravityController.h"
 #include "Steerable2DController.h"
+#include "Steerable3DController.h"
 #include "Utils.h"
 
 using namespace BGE;
@@ -22,7 +23,8 @@ bool Lab8::Initialise(){
 	ship1->transform->position = glm::vec3(-10, 2, -10);
 	ship1->Attach(make_shared<VectorDrawer>());
 	//ship1->Attach(make_shared<GravityController>());
-	ship1->Attach(make_shared<Steerable2DController>(dynamic_pointer_cast<Model>(ship1->FindComponentByTag(shipmodel->tag))));
+	ship1->Attach(make_shared<Steerable2DController>(dynamic_pointer_cast<Model>(ship1->FindComponentByTag(shipmodel->tag)), SDL_SCANCODE_I, SDL_SCANCODE_K, SDL_SCANCODE_J, SDL_SCANCODE_L));
+	//ship1->Attach(make_shared<Steerable3DController>(dynamic_pointer_cast<Model>(ship1->FindComponentByTag(shipmodel->tag)), SDL_SCANCODE_I, SDL_SCANCODE_K, SDL_SCANCODE_J, SDL_SCANCODE_L, SDL_SCANCODE_O, SDL_SCANCODE_U, SDL_SCANCODE_B));
 	Attach(ship1);
 
 	Game::Initialise();

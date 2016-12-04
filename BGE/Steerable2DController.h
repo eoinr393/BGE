@@ -13,7 +13,7 @@ namespace BGE
 		shared_ptr<Model> model;
 	public:
 		Steerable2DController();
-		Steerable2DController(shared_ptr<Model> model);
+		Steerable2DController(shared_ptr<Model> model,SDL_Keycode up, SDL_Keycode down, SDL_Keycode left, SDL_Keycode right);
 		~Steerable2DController(void);
 
 		bool Initialise();

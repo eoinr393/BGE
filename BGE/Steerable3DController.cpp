@@ -23,6 +23,26 @@ Steerable3DController::Steerable3DController(shared_ptr<Model> model):GameCompon
 	this->model = model;
 }
 
+Steerable3DController::Steerable3DController(shared_ptr<Model> model, SDL_Keycode up, SDL_Keycode down, SDL_Keycode left, SDL_Keycode right, SDL_Keycode rollRight, SDL_Keycode rollLeft, SDL_Keycode rise) :GameComponent(){
+	mass = 10.0f;
+	velocity = glm::vec3(0);
+	force = glm::vec3(0);
+	acceleration = glm::vec3(0);
+	angularAcceleration = glm::vec3(0);
+	angularVelocity = glm::vec3(0);
+	torque = glm::vec3(0);
+	this->model = model;
+
+	keyUp = up;
+	keyDown = down;
+	keyLeft = left;
+	keyRight = right;
+	keyRollRight = rollRight;
+	keyRollLeft = rollLeft;
+	keyRise = rise;
+
+}
+
 Steerable3DController::~Steerable3DController(void)
 {
 }
@@ -78,40 +98,40 @@ void Steerable3DController::Update(float timeDelta)
 	const Uint8 * keyState = Game::Instance()->GetKeyState();
 
 	float scale = 10000.0f;
-	if (keyState[SDL_SCANCODE_SPACE])
+	if (keyState[keyRise])
     {
         AddForce(transform->look * scale * timeDelta);
     }
 
     // Yaw
-	if (keyState[SDL_SCANCODE_J])
+	if (keyState[keyLeft])
     {
 		AddTorque(transform->up * scale * timeDelta);
     }
-    if (keyState[SDL_SCANCODE_L])
+    if (keyState[keyRight])
     {
         AddTorque(- transform->up * scale * timeDelta);
     }
     // End of Yaw
 
     //Pitch
-    if (keyState[SDL_SCANCODE_I])
+    if (keyState[keyUp])
     {
         AddTorque(transform->right * scale * timeDelta);
     }
-    if (keyState[SDL_SCANCODE_K])
+    if (keyState[keyDown])
     {
         AddTorque(- transform->right * scale * timeDelta);
     }
     // End of Pitch
 
 	// Roll
-    if (keyState[SDL_SCANCODE_Y])
+    if (keyState[keyRollRight])
     {
         AddTorque(transform->look * scale * timeDelta);
     }
 
-    if (keyState[SDL_SCANCODE_H])
+    if (keyState[keyRollLeft])
     {
         AddTorque(- transform->look * scale * timeDelta);
     }

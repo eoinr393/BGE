@@ -78,23 +78,35 @@ void Lab6::Update(float timeDelta)
 		ship2->transform->Fly(-timeDelta * speed);
 	}
 
+	if (keyState[SDL_SCANCODE_SPACE]){
+
+	}
+
 	// Your code goes here...
 
-	glm::vec3 start = ship1->transform->position;
-	glm::vec3 dest = ship2->transform->position;
+	if (keyState[SDL_SCANCODE_SPACE]) {
 
-	float cosTheta = glm::dot(start, dest);
-	glm::vec3 rotationAxis;
+		slerping = true;
+	}
 
-	rotationAxis = glm::cross(start, dest);
 
-	float s = glm::sqrt((1 + cosTheta) * 2);
-	float inv = 1 / s;
+	if (slerping) {
+		glm::vec3 relPos = glm::normalize(ship2->transform->position - ship1->transform->position);
+		glm::vec3 axis = glm::normalize(glm::cross(Transform::basisLook, relPos));
+		float angleOfRot = glm::dot(ship1->transform->basisLook, relPos);
+		float toRotation = glm::degrees(glm::acos(angleOfRot));
+		float timeReq = toRotation / turnRate;
 
-	//glm::quat rotationQuat = glm::quat(s * 0.5f, rotationAxis.x * inv, rotationAxis.y * inv, rotationAxis.z * inv);
-	glm::quat rotationQuat = glm::quat(s, rotationAxis.x, rotationAxis.y, rotationAxis.z);
+		glm::quat q = glm::angleAxis(toRotation, axis);
 
-	ship1->transform->orientation = rotationQuat;
+		t += timeDelta / timeReq;
+		ship1->transform->orientation = glm::mix(ship1->transform->orientation, glm::normalize(q), t);
+		cout << t << endl;
+		if (t >= 1.0f) {
+			slerping = false;
+			t = 0;
+		}
+	}
 
 	Game::Update(timeDelta);
 

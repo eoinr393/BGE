@@ -13,7 +13,16 @@ namespace BGE
 		shared_ptr<Model> model;
 	public:
 		Steerable3DController(shared_ptr<Model> model);
+		Steerable3DController(shared_ptr<Model> model, SDL_Keycode up, SDL_Keycode down, SDL_Keycode left, SDL_Keycode right, SDL_Keycode rollRight, SDL_Keycode rollLeft, SDL_Keycode rise);
 		~Steerable3DController(void);
+
+		SDL_Keycode keyUp = SDL_SCANCODE_UP;
+		SDL_Keycode keyLeft = SDL_SCANCODE_LEFT;
+		SDL_Keycode keyRight = SDL_SCANCODE_RIGHT;
+		SDL_Keycode keyDown = SDL_SCANCODE_DOWN;
+		SDL_Keycode keyRollLeft = SDL_SCANCODE_Y;
+		SDL_Keycode keyRollRight = SDL_SCANCODE_H;
+		SDL_Keycode keyRise = SDL_SCANCODE_SPACE;
 
 		bool Initialise();
 		void Update(float timeDelta);

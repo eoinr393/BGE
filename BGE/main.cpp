@@ -6,6 +6,7 @@
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include<glm.hpp>
+#include "Assignment1.h"
 #include "Game.h"
 #include "TriangleTest.h"
 #include "TexturedCube.h"
@@ -50,7 +51,7 @@ int main(int argc, char *argv[])
 	// http://www.youtube.com/watch?v=EEbVHxOkTxw
 	Params::Load("default");
 
-	shared_ptr<Game> game = make_shared<Lab8>();
+	shared_ptr<Game> game = make_shared<Assignment1>();
 	game->Run();
 	
 	return 0;

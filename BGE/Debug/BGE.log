@@ -1,8 +1,16 @@
-﻿Build started 24/11/2016 18:09:58.
+﻿Build started 04/12/2016 14:24:55.
      1>Project "C:\Users\eoinr\Documents\College\Game Engines\BGE\BGE\BGE\BGE.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Lab8.cpp
-         Lab8.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Assignmment1.cpp main.cpp
+         Assignmment1.cpp
+         Generating Code...
+         Compiling...
+         main.cpp
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\bge\buddha.h(7): warning C4005: 'FOUNTAIN_RADIUS' : macro redefinition
+                 c:\users\eoinr\documents\college\game engines\bge\bge\bge\lab4.h(7) : see previous definition of 'FOUNTAIN_RADIUS'
+     1>c:\users\eoinr\documents\college\game engines\bge\bge\dependencies\speech\v11.0\include\sphelper.h(1235): warning C4996: 'GetVersionExW': was declared deprecated
+                 c:\program files (x86)\windows kits\8.1\include\um\sysinfoapi.h(442) : see declaration of 'GetVersionExW'
+         Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\eoinr\Documents\College\Game Engines\BGE\BGE\Debug\BGE.exe" /INCREMENTAL /NOLOGO Leap.lib Ws2_32.lib BulletCollision_vs2010_debug.lib BulletDynamics_vs2010_debug.lib LinearMath_vs2010_debug.lib fmodex_vc.lib winmm.lib libovr.lib glew32.lib SDL2.lib SDL2main.lib SDL2_ttf.lib opengl32.lib glu32.lib Kinect20.lib Kinect20.Face.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\eoinr\Documents\College\Game Engines\BGE\BGE\Debug\BGE.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\eoinr\Documents\College\Game Engines\BGE\BGE\Debug\BGE.lib" /MACHINE:X86 /PROFILE Debug\Assignmment1.obj
          Debug\AttackingState.obj
@@ -126,6 +134,7 @@
      1>BulletCollision_vs2010_debug.lib(btSubSimplexConvexCast.obj) : warning LNK4099: PDB 'bulletcollision_vs2010_debug.pdb' was not found with 'BulletCollision_vs2010_debug.lib(btSubSimplexConvexCast.obj)' or at 'C:\Users\eoinr\Documents\College\Game Engines\BGE\BGE\Debug\bulletcollision_vs2010_debug.pdb'; linking object as if no debug info
      1>BulletCollision_vs2010_debug.lib(btVoronoiSimplexSolver.obj) : warning LNK4099: PDB 'bulletcollision_vs2010_debug.pdb' was not found with 'BulletCollision_vs2010_debug.lib(btVoronoiSimplexSolver.obj)' or at 'C:\Users\eoinr\Documents\College\Game Engines\BGE\BGE\Debug\bulletcollision_vs2010_debug.pdb'; linking object as if no debug info
      1>BulletDynamics_vs2010_debug.lib(btConeTwistConstraint.obj) : warning LNK4099: PDB 'bulletdynamics_vs2010_debug.pdb' was not found with 'BulletDynamics_vs2010_debug.lib(btConeTwistConstraint.obj)' or at 'C:\Users\eoinr\Documents\College\Game Engines\BGE\BGE\Debug\bulletdynamics_vs2010_debug.pdb'; linking object as if no debug info
+     1>BulletDynamics_vs2010_debug.lib(btFixedConstraint.obj) : warning LNK4099: PDB 'bulletdynamics_vs2010_debug.pdb' was not found with 'BulletDynamics_vs2010_debug.lib(btFixedConstraint.obj)' or at 'C:\Users\eoinr\Documents\College\Game Engines\BGE\BGE\Debug\bulletdynamics_vs2010_debug.pdb'; linking object as if no debug info
      1>BulletDynamics_vs2010_debug.lib(btGeneric6DofConstraint.obj) : warning LNK4099: PDB 'bulletdynamics_vs2010_debug.pdb' was not found with 'BulletDynamics_vs2010_debug.lib(btGeneric6DofConstraint.obj)' or at 'C:\Users\eoinr\Documents\College\Game Engines\BGE\BGE\Debug\bulletdynamics_vs2010_debug.pdb'; linking object as if no debug info
      1>BulletDynamics_vs2010_debug.lib(btHingeConstraint.obj) : warning LNK4099: PDB 'bulletdynamics_vs2010_debug.pdb' was not found with 'BulletDynamics_vs2010_debug.lib(btHingeConstraint.obj)' or at 'C:\Users\eoinr\Documents\College\Game Engines\BGE\BGE\Debug\bulletdynamics_vs2010_debug.pdb'; linking object as if no debug info
      1>BulletDynamics_vs2010_debug.lib(btSequentialImpulseConstraintSolver.obj) : warning LNK4099: PDB 'bulletdynamics_vs2010_debug.pdb' was not found with 'BulletDynamics_vs2010_debug.lib(btSequentialImpulseConstraintSolver.obj)' or at 'C:\Users\eoinr\Documents\College\Game Engines\BGE\BGE\Debug\bulletdynamics_vs2010_debug.pdb'; linking object as if no debug info
@@ -142,4 +151,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:41.67
+Time Elapsed 00:01:40.38
